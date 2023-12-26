@@ -1,0 +1,472 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{font-size: 3.7em;}
+h2{font-size: 2.9em;}
+h3{font-size: 2.2em;}
+p{font-size: 1.45em;}
+ul{list-style: none;}
+
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif, Arial, Helvetica;
+    margin: 0; padding: 0;
+}
+
+#main{
+    padding: 1.5em 2.5em;
+    background-color: rgb(255, 191, 72);
+}
+
+button{
+    color: black;
+    padding: 1em 2em;
+    background-color: rgb(255, 191, 72);
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .5) ;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, .5);
+    color: rgb(255, 255, 255);
+}
+
+button:hover{
+    background-color: rgb(255, 191, 72);
+}
+
+.contenedor-desc{
+    max-width: 1500px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+}
+
+header .logo{
+    margin: 0;
+    padding: 10px px;
+    font-weight: bold;
+    color: rgb(255, 191, 72);
+    font-size: 1em;
+}
+
+header .contenedor-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a{
+    padding: 5px 12px;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: rgb(255, 191, 72);
+}
+
+.menuhorizontal{
+    display: flex;
+}
+
+.MV{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0;
+}
+
+.menuhorizontal> li:hover > .MV{
+    display: block;
+}
+
+.MV > li > a{
+    display: block;
+    color: rgb(255, 191, 72);
+    padding: 15px 15px;
+}
+
+.MV > li > a:hover{
+background-color: rgb(255, 255, 255);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 6em;
+    margin-right: 10px;
+}
+
+a{
+    color: rgb(255, 191, 72);
+    text-decoration: none;
+
+}
+
+.nav-link{
+    padding-right: 25px;
+}
+
+nav a:hover{
+    color: rgb(201, 136, 16);
+}
+
+#banner{
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 6em;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(Dexter_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner button{
+    font-size: 1em;
+}
+
+#banner h1{
+    color: whitesmoke;
+}
+
+#desc .contenedor-desc{
+    text-align: center;
+    padding: 210px 12px;
+}
+
+.DEXTER{
+    color: rgb(201, 136, 16);
+}
+
+#ejes{
+    background-color: rgb(50, 50, 50);
+    color: whitesmoke;
+    text-align: center;
+}
+
+#ejes .contenedor-desc{
+    padding: 9em 1em;
+}
+
+#ejes h2{
+    margin-top: 0em;
+    font-size: 3.2em;
+}
+
+#ejes p{
+    display: none;
+}
+
+#ejes .MVVF{
+background-position: center center;
+background-size: cover;
+padding: 50px 0px;
+margin: 30px;
+border-radius: 20px;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+}
+
+.MVVF:first-child{
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+     rgba(0,0,0,0.5)
+)
+,url(mision.jpg);
+
+}
+
+.MVVF:nth-child(2){
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url(Vision.png);
+
+}
+
+.MVVF:nth-child(3){
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url(Valores.jpeg);
+
+}
+
+.MVVF:last-child{
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url(Filosofia.jpg);
+
+}
+
+
+.slider{
+    margin: 7em;
+}
+.slider .title{
+    text-align: center;
+}
+
+.Creatividad{
+    color: rgb(201, 136, 16);
+}
+
+.slider p{
+    text-align: center;
+}
+
+.container_slider{
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.container_imgslider{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cards img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-3:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+.video .title{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 1.5em;
+    font-weight: bold;
+}
+
+.video .title .Calidad{
+    color: rgb(201, 136, 16);
+}
+
+.video{
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    padding: 1em;
+}
+
+.cont-video{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.cont-vb img{
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    margin-right: 25px;
+}
+
+#pqdexter .contenedor-desc{
+    text-align: center;
+    padding: 10em;
+}
+
+#pqdexter li{
+    margin: 1em 0em;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+}
+
+#pqdexter li{
+background-color: rgb(201, 136, 16);
+}
+
+.Vamos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    height: 80vh;
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url(Vamos.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+.Vamos button{
+    font-size: 1.5em
+}
+
+footer{
+    background-color: rgb(200, 200, 200);
+}
+
+footer h2{
+    margin: 0;
+    justify-content: flex-end;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 0.5em;
+    color: rgb(56, 54, 54);
+}
+footer p{
+    margin: 0;
+    justify-content: flex-end;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 1.5em;
+    color: rgb(56, 54, 54);
+}
+
+@media (min-width: 720px){
+#banner h1{
+    font-size: 5rem;
+}
+#desc .contenedor-desc{
+display: flex;
+justify-content: space-evenly;
+}
+
+#desc .contenidot{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#desc .imagen{   
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url(DescDexter.jpg);
+background-position: center center;
+background-size: cover;
+height: 30em;
+width: 35em;
+border-radius: 2em;
+}
+
+#ejes .ejest{
+    display: flex;
+    justify-content: center;
+}
+
+#ejes p{
+    display: block;
+    margin-bottom: 2em
+}
+
+#ejes h3{
+margin-top: 0;
+}
+
+#ejes .MMVF{
+    padding: 3em;
+}
+
+#pqnft .contenedor-desc{
+    text-align: initial;
+    flex-direction: row;
+}
+
+
+footer h2{
+    font-size: 1.5em;
+    text-align: right;
+    padding-top: 1.5em;
+
+}
+
+footer p{
+    text-align: right;
+}
+}
